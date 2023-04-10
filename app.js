@@ -82,7 +82,9 @@ app.get('/posts/:txt', (req, res) => {
         res.redirect('/');
     }
 })
-
+app.get('/:xyz',(req,res)=>{
+    res.render("errorpg.ejs")
+})
 
 app.listen(process.env.PORT || port, () => {
     console.log(`Server live at vercel | ${port}`)
