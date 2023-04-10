@@ -1,0 +1,19 @@
+<%-include('partials/navbar.ejs')-%>
+
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Compose</h1>
+        <form action="/" method="post">
+            <input type="text" name="titletxt" placeholder="Title">
+            <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="composetxt" placeholder="Start Penning down your Thoughts!"></textarea>
+            </div>            
+            <button class="btn btn-lg btn-dark" type="submit">Publish!</button>
+        </form>
+    </div>
+
+<%-include('partials/footer.ejs')-%>

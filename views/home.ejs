@@ -1,18 +1,34 @@
 <%-include('partials/navbar.ejs')-%>
 
-<div class="container">
-    <br>
-    <br>
-    <br><br>
+    <div class="container">
+        <br>
+        <br>
+        <br><br>
 
-    <h1>Home</h1>
-    <br>
-    <p><%=htext%></p><br><br>
+        <h1>Home</h1>
+        <br>
+        <p>
+            <%=htext%>
+        </p>
+        <br>
+        <br>
         <h1>Day-1</h1>
-        <p><%=d1text%></p>
-        <br><br> <h1>Day-2</h1>
-        <p><%=d2text%></p>
-        
+        <p>
+            <%=d1text%>
+        </p>
+        <br>
+        <br>
+        <h1>Day-2</h1>
+        <p>
+            <%=d2text%>
+        </p>
+        <% for(let i=0;i<blogsadd.length;i++) { %>
+            <br><br>
+            <h1><%= blogsadd[i].title %></h1>
+            <p>
+                <%=blogsadd[i].blog%>
+            </p>
+       <% } %>
     </div>
 
-<%-include('partials/footer.ejs')-%>
+    <%-include('partials/footer.ejs')-%>

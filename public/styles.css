@@ -5,8 +5,8 @@ a {
 }
 
 body {
-    background-color: rgb(22, 22, 22);
-    color: aliceblue;
+    background-color: #090909;
+    color: #ACACAC;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -16,7 +16,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     height: 78px;
-    background-color: antiquewhite;
+    background-color: #ACACAC;
     opacity: 0.8;
 }
 
@@ -25,7 +25,7 @@ nav:hover {
     background-image: url('./nav-svgafterhover.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: antiquewhite;
+    background-color: #ACACAC;
 
 }
 
@@ -45,4 +45,14 @@ nav:hover {
     background-size: cover;
     background-color: rgb(28, 27, 27);
 
+}
+input[type="text"]{
+    background-color: beige;
+}
+textarea{
+    height: 300px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 45%;
 }
