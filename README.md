@@ -3,9 +3,9 @@
 ### A blog website which helps user to read blogs and write their own blogs.
 
 to run it on your machine:
-- Fork the repo
-- install the dependencies
-- in the console: `node app.js`
+- Fork the repository
+- Install the dependencies `npm i`
+- In the console: `node app.js`
 
 
 # Home Page
