@@ -22,7 +22,7 @@ These bloggers have made a name for themselves in the programming world by posti
 You'll surely want to subscribe to these helpful programming websites and blogs written by the best blogging coders. So, let's get started!`
 const day2Text =readFileSync('data.txt',{encoding:'utf8'})
 
-let ALLPOSTS = [{ title: "Day-1", blog: day1Text }, { title: "Day-2", blog: day2Text }]
+let ALLPOSTS = [{ title: "About Programming", blog: day1Text }, { title: "Backend Web Development", blog: day2Text }]
 let BRIEFEDPOSTS = []
 //trucate code:
 // homeTextNew=homeText.substring(0,90)
