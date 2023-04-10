@@ -4,31 +4,15 @@
         <br>
         <br>
         <br><br>
-
-        <h1>Home</h1>
-        <br>
-        <p>
-            <%=htext%>
-        </p>
-        <br>
-        <br>
-        <h1>Day-1</h1>
-        <p>
-            <%=d1text%>
-        </p>
-        <br>
-        <br>
-        <h1>Day-2</h1>
-        <p>
-            <%=d2text%>
-        </p>
         <% for(let i=0;i<blogsadd.length;i++) { %>
             <br><br>
-            <h1><%= blogsadd[i].title %></h1>
+            <h1>
+                <%= blogsadd[i].title %>
+            </h1>
             <p>
-                <%=blogsadd[i].blog%>
+                <%=xyz[i]%>...<a class="read-more" href="/posts/<%=blogsadd[i].title%>">Read Full Blog</a>
             </p>
-       <% } %>
+            <% } %>
     </div>
 
     <%-include('partials/footer.ejs')-%>

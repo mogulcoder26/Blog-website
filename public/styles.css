@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fasthand&family=Lora:ital,wght@0,600;1,500&family=Montserrat&family=Nanum+Gothic+Coding:wght@400;700&family=Open+Sans&family=Poppins:wght@200;500&family=Sacramento&family=Source+Code+Pro:wght@600&family=Ubuntu:wght@400;700&display=swap');
 
+.container{
+    width: 80%;
+}
+
 a {
     font-size: 2rem;
 }
@@ -55,4 +59,11 @@ textarea{
 button{
     margin-top: 20px;
     margin-left: 45%;
+}
+h1,h2,h3,h4,h6{
+    color:plum;
+}
+
+.read-more{
+    font-size: 1rem;
 }
