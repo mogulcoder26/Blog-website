@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs')
 const port = 5000;
+const {readFileSync}=require('fs')
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set("views", __dirname + '/views')
@@ -19,7 +20,7 @@ To ensure that you remain up to date on standards and protocols, and even more s
 These bloggers have made a name for themselves in the programming world by posting important, high-quality data and tips for coders. You can learn tricks and shortcuts you would never have dreamed of doing otherwise by following programming blogs.
 
 You'll surely want to subscribe to these helpful programming websites and blogs written by the best blogging coders. So, let's get started!`
-const day2Text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi fuga rem, nesciunt molestias perspiciatis cupiditate hic. Facilis non pariatur perspiciatis saepe quos quo id cum repellendus qui amet, quasi, velit hic. Explicabo aspernatur, hic ipsa soluta ab neque assumenda provident, architecto inventore debitis consequatur molestias error, labore quidem tenetur unde. Deleniti delectus, culpa odio reprehenderit suscipit dolorem magnam? Deserunt iusto dolore facere molestias quod veniam, eaque quidem quia sapiente placeat minima voluptatem, fugiat unde non repudiandae corrupti!"
+const day2Text =readFileSync('data.txt',{encoding:'utf8'})
 
 let ALLPOSTS = [{ title: "Day-1", blog: day1Text }, { title: "Day-2", blog: day2Text }]
 let BRIEFEDPOSTS = []
